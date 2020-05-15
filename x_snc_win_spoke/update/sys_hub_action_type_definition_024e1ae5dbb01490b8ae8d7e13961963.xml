@@ -1,0 +1,4069 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Update Windows">0b5edae5dbb01490b8ae8d7e1396195b</category>
+        <copied_from>6fed5ea5dbb01490b8ae8d7e13961953</copied_from>
+        <copied_from_name>Stop Service</copied_from_name>
+        <description/>
+        <ih_action>true</ih_action>
+        <internal_name>stopstartrestart_service</internal_name>
+        <label_cache>[{"name":"{{action.host}}","label":"action➛host","type":"action","ref":""},{"name":"{{action.procname}}","label":"action➛svcName","type":"action","ref":""},{"name":"{{action.svcname}}","label":"action➛svcName","type":"action","ref":""},{"name":"{{action.action}}","label":"action➛action","type":"action","ref":""},{"name":"{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].output}}","label":"step➛Manipulate Services➛Output","type":"step","ref":""},{"name":"{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].error_message}}","label":"step➛Manipulate Services➛Error Message","type":"step","ref":""},{"name":"{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].windows_error_code}}","label":"step➛Manipulate Services➛Windows error code","type":"step","ref":""},{"name":"{{step[6b07d2c9-df7f-4fcc-b1c6-55b292909f45].variable}}","label":"step➛Format output for work notes➛variable","type":"step","ref":""},{"name":"{{step[6b07d2c9-df7f-4fcc-b1c6-55b292909f45].formatresult}}","label":"step➛Format output for work notes➛formatResult","type":"step","ref":""},{"name":"{{step[6b07d2c9-df7f-4fcc-b1c6-55b292909f45].formatted_resuts2}}","label":"step➛Format output for work notes➛Formatted Resuts2","type":"step","ref":""},{"name":"{{step[6b07d2c9-df7f-4fcc-b1c6-55b292909f45].formatresult2}}","label":"step➛Format output for work notes➛Formatted Resuts2","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>b861a26ddbb01490b8ae8d7e139619aa</latest_snapshot>
+        <master_snapshot>e161e26ddbb01490b8ae8d7e13961916</master_snapshot>
+        <name>Stop/Start/Restart Service</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>024e1ae5dbb01490b8ae8d7e13961963</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Stop/Start/Restart Service</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_024e1ae5dbb01490b8ae8d7e13961963</sys_update_name>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:47</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=024e1ae5dbb01490b8ae8d7e13961963"/>
+    <sys_variable_value action="delete_multiple" query="document_key=024e1ae5dbb01490b8ae8d7e13961963"/>
+    <sys_element_mapping action="delete_multiple" query="id=024e1ae5dbb01490b8ae8d7e13961963"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>errcode</field>
+        <id>024e1ae5dbb01490b8ae8d7e13961963</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:10</sys_created_on>
+        <sys_id>7e4e5ae5dbb01490b8ae8d7e13961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:10</sys_updated_on>
+        <table>var__m_sys_hub_action_output_024e1ae5dbb01490b8ae8d7e13961963</table>
+        <value>{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].windows_error_code}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error</field>
+        <id>024e1ae5dbb01490b8ae8d7e13961963</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:10</sys_created_on>
+        <sys_id>324e5ae5dbb01490b8ae8d7e13961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:10</sys_updated_on>
+        <table>var__m_sys_hub_action_output_024e1ae5dbb01490b8ae8d7e13961963</table>
+        <value>{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>formatresults</field>
+        <id>024e1ae5dbb01490b8ae8d7e13961963</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:10</sys_created_on>
+        <sys_id>b64e5ae5dbb01490b8ae8d7e13961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:10</sys_updated_on>
+        <table>var__m_sys_hub_action_output_024e1ae5dbb01490b8ae8d7e13961963</table>
+        <value>{{step[6b07d2c9-df7f-4fcc-b1c6-55b292909f45].formatresult}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>results</field>
+        <id>024e1ae5dbb01490b8ae8d7e13961963</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:10</sys_created_on>
+        <sys_id>f24e5ae5dbb01490b8ae8d7e13961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:10</sys_updated_on>
+        <table>var__m_sys_hub_action_output_024e1ae5dbb01490b8ae8d7e13961963</table>
+        <value>{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].output}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=024e1ae5dbb01490b8ae8d7e13961963^sys_idNOT IN124e1ae5dbb01490b8ae8d7e13961982,9a4e1ae5dbb01490b8ae8d7e13961995"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Stop/Start/Restart Service">024e1ae5dbb01490b8ae8d7e13961963</action>
+        <cid>620b6cb2-9012-4945-978d-4f95956cf4cf</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Manipulate Services</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="PowerShell">486f577a3721030003a08fb77e41f1d6</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:08</sys_created_on>
+        <sys_id>124e1ae5dbb01490b8ae8d7e13961982</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:39</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=124e1ae5dbb01490b8ae8d7e13961982"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>124e1ae5dbb01490b8ae8d7e13961982</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>1a4e1ae5dbb01490b8ae8d7e13961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="">4ecf1b7a3721030003a08fb77e41f149</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>124e1ae5dbb01490b8ae8d7e13961982</document_key>
+        <order>160</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>1e4e1ae5dbb01490b8ae8d7e13961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="">2183a3fa3721030003a08fb77e41f1c2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>124e1ae5dbb01490b8ae8d7e13961982</document_key>
+        <order>92</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>564e1ae5dbb01490b8ae8d7e13961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">306d63c25f101300a09a2abd7f466627</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>124e1ae5dbb01490b8ae8d7e13961982</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>5a4e1ae5dbb01490b8ae8d7e13961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <value>427709a60a0006bc7d2904e99132532d</value>
+        <variable display_value="">2046cd992f201300a09a839fb18c956d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>124e1ae5dbb01490b8ae8d7e13961982</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>924e1ae5dbb01490b8ae8d7e13961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <value>659544c9db381090b8ae8d7e139619ed</value>
+        <variable display_value="">5c30ab7a3721030003a08fb77e41f12e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>124e1ae5dbb01490b8ae8d7e13961982</document_key>
+        <order>130</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>da4e1ae5dbb01490b8ae8d7e13961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <value>inline_script</value>
+        <variable display_value="">e6f26fba3721030003a08fb77e41f1eb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>124e1ae5dbb01490b8ae8d7e13961982</document_key>
+        <order>140</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>de4e1ae5dbb01490b8ae8d7e13961991</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:31</sys_updated_on>
+        <value>#******* Format to access Input Parameters *******&#13;
+# To use variable, prefix with '$'. eg. $message&#13;
+# Read more https://docs.servicenow.com/?context=CSHelp:IntegrationHub-PowerShell-Step&#13;
+&#13;
+#******* Reserved variables available when remoting type is Run on MID&#13;
+# $computer   Host IP resolved from Connection alias&#13;
+# $cred       Credential Object. Credential resolved via connection alias or credential alias. This can be used in conjunction with any cmd-let which support credential parameter eg. New-PSSession -credential $cred&#13;
+# $log_info   mid property "mid.property.powershell.log_info" set on instance to enable debugging. So it's a flag available to act on and add any verbose logging if they want to in their script&#13;
+&#13;
+if($action -eq 'start'){&#13;
+    invoke-command -ScriptBlock {Start-Service -Name $svcName}&#13;
+}&#13;
+elseif($action -eq 'stop'){&#13;
+    invoke-command -ScriptBlock {Stop-Service -Name $svcName}&#13;
+}&#13;
+elseif($action -eq 'suspend'){&#13;
+    invoke-command -ScriptBlock {Suspend-Service -Name $svcName}&#13;
+}&#13;
+elseif($action -eq 'restart'){&#13;
+    invoke-command -ScriptBlock {Restart-Service -Name $svcName}&#13;
+}</value>
+        <variable display_value="">c54323fa3721030003a08fb77e41f16e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=124e1ae5dbb01490b8ae8d7e13961982"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>124e1ae5dbb01490b8ae8d7e13961982</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>9e4e1ae5dbb01490b8ae8d7e13961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>124e1ae5dbb01490b8ae8d7e13961982</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>924e1ae5dbb01490b8ae8d7e13961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>command</field>
+        <id>124e1ae5dbb01490b8ae8d7e13961982</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>1a4e1ae5dbb01490b8ae8d7e13961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>124e1ae5dbb01490b8ae8d7e13961982</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>164e1ae5dbb01490b8ae8d7e13961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>credential_alias</field>
+        <id>124e1ae5dbb01490b8ae8d7e13961982</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>da4e1ae5dbb01490b8ae8d7e13961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>host</field>
+        <id>124e1ae5dbb01490b8ae8d7e13961982</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>524e1ae5dbb01490b8ae8d7e13961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value>{{action.host}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_variables</field>
+        <id>124e1ae5dbb01490b8ae8d7e13961982</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>564e1ae5dbb01490b8ae8d7e13961990</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:39</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value>{"action":"{{action.action}}","svcName":"{{action.svcname}}"}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script_type</field>
+        <id>124e1ae5dbb01490b8ae8d7e13961982</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>d64e1ae5dbb01490b8ae8d7e13961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=124e1ae5dbb01490b8ae8d7e13961982^sys_idNOT IN1a4e1ae5dbb01490b8ae8d7e13961986"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=c83daa72-0018-4328-af2a-624b148f1eef</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Manipulate Services">124e1ae5dbb01490b8ae8d7e13961982</model>
+        <model_id>124e1ae5dbb01490b8ae8d7e13961982</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_124e1ae5dbb01490b8ae8d7e13961982</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:08</sys_created_on>
+        <sys_id>1a4e1ae5dbb01490b8ae8d7e13961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Stop/Start/Restart Service">024e1ae5dbb01490b8ae8d7e13961963</action>
+        <cid>6b07d2c9-df7f-4fcc-b1c6-55b292909f45</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Format output for work notes</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>9a4e1ae5dbb01490b8ae8d7e13961995</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:31</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9a4e1ae5dbb01490b8ae8d7e13961995"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9a4e1ae5dbb01490b8ae8d7e13961995</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>624e1ae5dbb01490b8ae8d7e139619da</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:31</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+  try{
+  	var frmtOutput = 'Service request results:&lt;br/&gt;';
+  	var rawInput = inputs.result;
+   
+    // Format the output to be used in work notes and be in courier font
+    
+    //frmtOutput += rawInput.replace(/(\r\n|\n|\r)/gm,"&lt;br/&gt;").replace(/ {1,}/g," ");
+  	frmtOutput += rawInput.replace(/(\r\n|\n|\r)/gm,"&lt;br/&gt;");
+  	var formatted1 = '[code]&lt;pre&gt;&lt;code&gt;' + frmtOutput + '&lt;/code&gt;&lt;/pre&gt;[/code]';
+  	outputs.formatresult = formatted1;
+  } catch (e) {
+    gs.info('Error formatting output: ' + e);
+  }
+
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9a4e1ae5dbb01490b8ae8d7e13961995</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>ae4e1ae5dbb01490b8ae8d7e139619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9a4e1ae5dbb01490b8ae8d7e13961995"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>9a4e1ae5dbb01490b8ae8d7e13961995</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>6a4e1ae5dbb01490b8ae8d7e139619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>result</field>
+        <id>9a4e1ae5dbb01490b8ae8d7e13961995</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>ea4e1ae5dbb01490b8ae8d7e139619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_9a4e1ae5dbb01490b8ae8d7e13961995</table>
+        <value>{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].output}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>9a4e1ae5dbb01490b8ae8d7e13961995</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>2e4e1ae5dbb01490b8ae8d7e139619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=9a4e1ae5dbb01490b8ae8d7e13961995^sys_idNOT IN164e1ae5dbb01490b8ae8d7e13961998"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>result</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Format output for work notes">9a4e1ae5dbb01490b8ae8d7e13961995</model>
+        <model_id>9a4e1ae5dbb01490b8ae8d7e13961995</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_9a4e1ae5dbb01490b8ae8d7e13961995</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>164e1ae5dbb01490b8ae8d7e13961998</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=9a4e1ae5dbb01490b8ae8d7e13961995^sys_idNOT INae4e1ae5dbb01490b8ae8d7e139619d0"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d2465418-d705-496d-b3be-2e832006442f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>formatresult</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>formatResult</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Format output for work notes">9a4e1ae5dbb01490b8ae8d7e13961995</model>
+        <model_id>9a4e1ae5dbb01490b8ae8d7e13961995</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_9a4e1ae5dbb01490b8ae8d7e13961995</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>ae4e1ae5dbb01490b8ae8d7e139619d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=024e1ae5dbb01490b8ae8d7e13961963^sys_idNOT IN964e1ae5dbb01490b8ae8d7e13961974,ca51ee2ddbb01490b8ae8d7e139619f5,de4e1ae5dbb01490b8ae8d7e1396197a"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=41a8e8d7-b371-474f-b26f-801574f0f3ab</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>host</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>host</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Stop/Start/Restart Service">024e1ae5dbb01490b8ae8d7e13961963</model>
+        <model_id>024e1ae5dbb01490b8ae8d7e13961963</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_024e1ae5dbb01490b8ae8d7e13961963</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:08</sys_created_on>
+        <sys_id>964e1ae5dbb01490b8ae8d7e13961974</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=78132465-c049-4bd6-9eb5-37e0008adc4b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>action</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>action</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Stop/Start/Restart Service">024e1ae5dbb01490b8ae8d7e13961963</model>
+        <model_id>024e1ae5dbb01490b8ae8d7e13961963</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_024e1ae5dbb01490b8ae8d7e13961963</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:30</sys_created_on>
+        <sys_id>ca51ee2ddbb01490b8ae8d7e139619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f380510e-73a9-4b14-ac4a-006cd7923009</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>svcname</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>svcName</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Stop/Start/Restart Service">024e1ae5dbb01490b8ae8d7e13961963</model>
+        <model_id>024e1ae5dbb01490b8ae8d7e13961963</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_024e1ae5dbb01490b8ae8d7e13961963</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:08</sys_created_on>
+        <sys_id>de4e1ae5dbb01490b8ae8d7e1396197a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=024e1ae5dbb01490b8ae8d7e13961963^sys_idNOT IN264e1ae5dbb01490b8ae8d7e139619dd,2e4e1ae5dbb01490b8ae8d7e139619e3,e24e1ae5dbb01490b8ae8d7e139619f6,e24e1ae5dbb01490b8ae8d7e139619fc"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=f69cb2c4-37a1-47e1-9b6e-d8e66aaf85b0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>results</element>
+        <element_prototype display_value="Output" element="output" name="var__m_sys_flow_step_definition_output_486f577a3721030003a08fb77e41f1d6">4b98e37e3721030003a08fb77e41f1aa</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>results</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Stop/Start/Restart Service">024e1ae5dbb01490b8ae8d7e13961963</model>
+        <model_id>024e1ae5dbb01490b8ae8d7e13961963</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_024e1ae5dbb01490b8ae8d7e13961963</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>264e1ae5dbb01490b8ae8d7e139619dd</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=3d05088c-f6fe-4236-b205-5902b4fcba62</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error</element>
+        <element_prototype display_value="Error Message" element="error_message" name="var__m_sys_flow_step_definition_output_486f577a3721030003a08fb77e41f1d6">1d8196c7e703030007a64caac2f6a999</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>error</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Stop/Start/Restart Service">024e1ae5dbb01490b8ae8d7e13961963</model>
+        <model_id>024e1ae5dbb01490b8ae8d7e13961963</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_024e1ae5dbb01490b8ae8d7e13961963</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>2e4e1ae5dbb01490b8ae8d7e139619e3</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=1ca6a8d4-1a22-45f4-a5b4-4cb77f7d7bb5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>errcode</element>
+        <element_prototype display_value="Windows error code" element="windows_error_code" name="var__m_sys_flow_step_definition_output_486f577a3721030003a08fb77e41f1d6">8ec362673702030003a08fb77e41f1b6</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>errCode</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Stop/Start/Restart Service">024e1ae5dbb01490b8ae8d7e13961963</model>
+        <model_id>024e1ae5dbb01490b8ae8d7e13961963</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_024e1ae5dbb01490b8ae8d7e13961963</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:10</sys_created_on>
+        <sys_id>e24e1ae5dbb01490b8ae8d7e139619f6</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=2906df15-f4c5-487f-a766-63c22ff30f87</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>formatresults</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>formatResults</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Stop/Start/Restart Service">024e1ae5dbb01490b8ae8d7e13961963</model>
+        <model_id>024e1ae5dbb01490b8ae8d7e13961963</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_024e1ae5dbb01490b8ae8d7e13961963</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:10</sys_created_on>
+        <sys_id>e24e1ae5dbb01490b8ae8d7e139619fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_step_instance action="delete_multiple" query="action=024e1ae5dbb01490b8ae8d7e13961963^sys_idNOT IN124e1ae5dbb01490b8ae8d7e13961982,9a4e1ae5dbb01490b8ae8d7e13961995"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Stop/Start/Restart Service">024e1ae5dbb01490b8ae8d7e13961963</action>
+        <cid>620b6cb2-9012-4945-978d-4f95956cf4cf</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Manipulate Services</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="PowerShell">486f577a3721030003a08fb77e41f1d6</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:08</sys_created_on>
+        <sys_id>124e1ae5dbb01490b8ae8d7e13961982</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:39</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=124e1ae5dbb01490b8ae8d7e13961982"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>124e1ae5dbb01490b8ae8d7e13961982</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>1a4e1ae5dbb01490b8ae8d7e13961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="">4ecf1b7a3721030003a08fb77e41f149</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>124e1ae5dbb01490b8ae8d7e13961982</document_key>
+        <order>160</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>1e4e1ae5dbb01490b8ae8d7e13961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="">2183a3fa3721030003a08fb77e41f1c2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>124e1ae5dbb01490b8ae8d7e13961982</document_key>
+        <order>92</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>564e1ae5dbb01490b8ae8d7e13961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">306d63c25f101300a09a2abd7f466627</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>124e1ae5dbb01490b8ae8d7e13961982</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>5a4e1ae5dbb01490b8ae8d7e13961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <value>427709a60a0006bc7d2904e99132532d</value>
+        <variable display_value="">2046cd992f201300a09a839fb18c956d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>124e1ae5dbb01490b8ae8d7e13961982</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>924e1ae5dbb01490b8ae8d7e13961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <value>659544c9db381090b8ae8d7e139619ed</value>
+        <variable display_value="">5c30ab7a3721030003a08fb77e41f12e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>124e1ae5dbb01490b8ae8d7e13961982</document_key>
+        <order>130</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>da4e1ae5dbb01490b8ae8d7e13961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <value>inline_script</value>
+        <variable display_value="">e6f26fba3721030003a08fb77e41f1eb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>124e1ae5dbb01490b8ae8d7e13961982</document_key>
+        <order>140</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>de4e1ae5dbb01490b8ae8d7e13961991</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:31</sys_updated_on>
+        <value>#******* Format to access Input Parameters *******&#13;
+# To use variable, prefix with '$'. eg. $message&#13;
+# Read more https://docs.servicenow.com/?context=CSHelp:IntegrationHub-PowerShell-Step&#13;
+&#13;
+#******* Reserved variables available when remoting type is Run on MID&#13;
+# $computer   Host IP resolved from Connection alias&#13;
+# $cred       Credential Object. Credential resolved via connection alias or credential alias. This can be used in conjunction with any cmd-let which support credential parameter eg. New-PSSession -credential $cred&#13;
+# $log_info   mid property "mid.property.powershell.log_info" set on instance to enable debugging. So it's a flag available to act on and add any verbose logging if they want to in their script&#13;
+&#13;
+if($action -eq 'start'){&#13;
+    invoke-command -ScriptBlock {Start-Service -Name $svcName}&#13;
+}&#13;
+elseif($action -eq 'stop'){&#13;
+    invoke-command -ScriptBlock {Stop-Service -Name $svcName}&#13;
+}&#13;
+elseif($action -eq 'suspend'){&#13;
+    invoke-command -ScriptBlock {Suspend-Service -Name $svcName}&#13;
+}&#13;
+elseif($action -eq 'restart'){&#13;
+    invoke-command -ScriptBlock {Restart-Service -Name $svcName}&#13;
+}</value>
+        <variable display_value="">c54323fa3721030003a08fb77e41f16e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=124e1ae5dbb01490b8ae8d7e13961982"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>124e1ae5dbb01490b8ae8d7e13961982</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>9e4e1ae5dbb01490b8ae8d7e13961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>124e1ae5dbb01490b8ae8d7e13961982</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>924e1ae5dbb01490b8ae8d7e13961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>command</field>
+        <id>124e1ae5dbb01490b8ae8d7e13961982</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>1a4e1ae5dbb01490b8ae8d7e13961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>124e1ae5dbb01490b8ae8d7e13961982</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>164e1ae5dbb01490b8ae8d7e13961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>credential_alias</field>
+        <id>124e1ae5dbb01490b8ae8d7e13961982</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>da4e1ae5dbb01490b8ae8d7e13961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>host</field>
+        <id>124e1ae5dbb01490b8ae8d7e13961982</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>524e1ae5dbb01490b8ae8d7e13961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value>{{action.host}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_variables</field>
+        <id>124e1ae5dbb01490b8ae8d7e13961982</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>564e1ae5dbb01490b8ae8d7e13961990</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:39</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value>{"action":"{{action.action}}","svcName":"{{action.svcname}}"}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script_type</field>
+        <id>124e1ae5dbb01490b8ae8d7e13961982</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>d64e1ae5dbb01490b8ae8d7e13961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=124e1ae5dbb01490b8ae8d7e13961982^sys_idNOT IN1a4e1ae5dbb01490b8ae8d7e13961986"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=c83daa72-0018-4328-af2a-624b148f1eef</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Manipulate Services">124e1ae5dbb01490b8ae8d7e13961982</model>
+        <model_id>124e1ae5dbb01490b8ae8d7e13961982</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_124e1ae5dbb01490b8ae8d7e13961982</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:08</sys_created_on>
+        <sys_id>1a4e1ae5dbb01490b8ae8d7e13961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Stop/Start/Restart Service">024e1ae5dbb01490b8ae8d7e13961963</action>
+        <cid>6b07d2c9-df7f-4fcc-b1c6-55b292909f45</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Format output for work notes</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>9a4e1ae5dbb01490b8ae8d7e13961995</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:31</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9a4e1ae5dbb01490b8ae8d7e13961995"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9a4e1ae5dbb01490b8ae8d7e13961995</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>624e1ae5dbb01490b8ae8d7e139619da</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:31</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+  try{
+  	var frmtOutput = 'Service request results:&lt;br/&gt;';
+  	var rawInput = inputs.result;
+   
+    // Format the output to be used in work notes and be in courier font
+    
+    //frmtOutput += rawInput.replace(/(\r\n|\n|\r)/gm,"&lt;br/&gt;").replace(/ {1,}/g," ");
+  	frmtOutput += rawInput.replace(/(\r\n|\n|\r)/gm,"&lt;br/&gt;");
+  	var formatted1 = '[code]&lt;pre&gt;&lt;code&gt;' + frmtOutput + '&lt;/code&gt;&lt;/pre&gt;[/code]';
+  	outputs.formatresult = formatted1;
+  } catch (e) {
+    gs.info('Error formatting output: ' + e);
+  }
+
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9a4e1ae5dbb01490b8ae8d7e13961995</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>ae4e1ae5dbb01490b8ae8d7e139619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9a4e1ae5dbb01490b8ae8d7e13961995"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>9a4e1ae5dbb01490b8ae8d7e13961995</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>6a4e1ae5dbb01490b8ae8d7e139619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>result</field>
+        <id>9a4e1ae5dbb01490b8ae8d7e13961995</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>ea4e1ae5dbb01490b8ae8d7e139619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_9a4e1ae5dbb01490b8ae8d7e13961995</table>
+        <value>{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].output}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>9a4e1ae5dbb01490b8ae8d7e13961995</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>2e4e1ae5dbb01490b8ae8d7e139619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=9a4e1ae5dbb01490b8ae8d7e13961995^sys_idNOT IN164e1ae5dbb01490b8ae8d7e13961998"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>result</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Format output for work notes">9a4e1ae5dbb01490b8ae8d7e13961995</model>
+        <model_id>9a4e1ae5dbb01490b8ae8d7e13961995</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_9a4e1ae5dbb01490b8ae8d7e13961995</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>164e1ae5dbb01490b8ae8d7e13961998</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=9a4e1ae5dbb01490b8ae8d7e13961995^sys_idNOT INae4e1ae5dbb01490b8ae8d7e139619d0"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d2465418-d705-496d-b3be-2e832006442f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>formatresult</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>formatResult</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Format output for work notes">9a4e1ae5dbb01490b8ae8d7e13961995</model>
+        <model_id>9a4e1ae5dbb01490b8ae8d7e13961995</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_9a4e1ae5dbb01490b8ae8d7e13961995</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>ae4e1ae5dbb01490b8ae8d7e139619d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_024e1ae5dbb01490b8ae8d7e13961963^sys_idNOT IN0251ee2ddbb01490b8ae8d7e139619fb,1e4e1ae5dbb01490b8ae8d7e13961979,da4e1ae5dbb01490b8ae8d7e1396197f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>action</element>
+        <help/>
+        <hint/>
+        <label>action</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_024e1ae5dbb01490b8ae8d7e13961963</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:30</sys_created_on>
+        <sys_id>0251ee2ddbb01490b8ae8d7e139619fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>host</element>
+        <help/>
+        <hint/>
+        <label>host</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_024e1ae5dbb01490b8ae8d7e13961963</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:08</sys_created_on>
+        <sys_id>1e4e1ae5dbb01490b8ae8d7e13961979</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>svcname</element>
+        <help/>
+        <hint/>
+        <label>svcName</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_024e1ae5dbb01490b8ae8d7e13961963</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:08</sys_created_on>
+        <sys_id>da4e1ae5dbb01490b8ae8d7e1396197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_024e1ae5dbb01490b8ae8d7e13961963^sys_idNOT IN224e1ae5dbb01490b8ae8d7e139619f5,224e1ae5dbb01490b8ae8d7e139619fb,664e5ae5dbb01490b8ae8d7e13961926,6a4e1ae5dbb01490b8ae8d7e139619e2"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error</element>
+        <help/>
+        <hint/>
+        <label>error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_024e1ae5dbb01490b8ae8d7e13961963</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:10</sys_created_on>
+        <sys_id>224e1ae5dbb01490b8ae8d7e139619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>errcode</element>
+        <help/>
+        <hint/>
+        <label>errCode</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_024e1ae5dbb01490b8ae8d7e13961963</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:10</sys_created_on>
+        <sys_id>224e1ae5dbb01490b8ae8d7e139619fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>formatresults</element>
+        <help/>
+        <hint/>
+        <label>formatResults</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_024e1ae5dbb01490b8ae8d7e13961963</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:10</sys_created_on>
+        <sys_id>664e5ae5dbb01490b8ae8d7e13961926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>results</element>
+        <help/>
+        <hint/>
+        <label>results</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_024e1ae5dbb01490b8ae8d7e13961963</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:19:09</sys_created_on>
+        <sys_id>6a4e1ae5dbb01490b8ae8d7e139619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:19:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=024e1ae5dbb01490b8ae8d7e13961963^sys_idNOT INfe61266ddbb01490b8ae8d7e13961988"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Stop/Start/Restart Service">024e1ae5dbb01490b8ae8d7e13961963</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"fe61266ddbb01490b8ae8d7e13961988","name":"plan"}}</plan>
+        <snapshot>b861a26ddbb01490b8ae8d7e139619aa</snapshot>
+        <sys_class_name>sys_hub_action_plan</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>fe61266ddbb01490b8ae8d7e13961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:50</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Update Windows">0b5edae5dbb01490b8ae8d7e1396195b</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>stopstartrestart_service</internal_name>
+        <label_cache>[{"name":"{{action.host}}","label":"action➛host","type":"action","ref":""},{"name":"{{action.procname}}","label":"action➛svcName","type":"action","ref":""},{"name":"{{action.svcname}}","label":"action➛svcName","type":"action","ref":""},{"name":"{{action.action}}","label":"action➛action","type":"action","ref":""},{"name":"{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].output}}","label":"step➛Manipulate Services➛Output","type":"step","ref":""},{"name":"{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].error_message}}","label":"step➛Manipulate Services➛Error Message","type":"step","ref":""},{"name":"{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].windows_error_code}}","label":"step➛Manipulate Services➛Windows error code","type":"step","ref":""},{"name":"{{step[6b07d2c9-df7f-4fcc-b1c6-55b292909f45].variable}}","label":"step➛Format output for work notes➛variable","type":"step","ref":""},{"name":"{{step[6b07d2c9-df7f-4fcc-b1c6-55b292909f45].formatresult}}","label":"step➛Format output for work notes➛formatResult","type":"step","ref":""},{"name":"{{step[6b07d2c9-df7f-4fcc-b1c6-55b292909f45].formatted_resuts2}}","label":"step➛Format output for work notes➛Formatted Resuts2","type":"step","ref":""},{"name":"{{step[6b07d2c9-df7f-4fcc-b1c6-55b292909f45].formatresult2}}","label":"step➛Format output for work notes➛Formatted Resuts2","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Stop/Start/Restart Service</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Stop/Start/Restart Service">024e1ae5dbb01490b8ae8d7e13961963</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e161e26ddbb01490b8ae8d7e13961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:44</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=e161e26ddbb01490b8ae8d7e13961916"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e161e26ddbb01490b8ae8d7e13961916"/>
+    <sys_element_mapping action="delete_multiple" query="id=e161e26ddbb01490b8ae8d7e13961916"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>errcode</field>
+        <id>e161e26ddbb01490b8ae8d7e13961916</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:47</sys_created_on>
+        <sys_id>ce61e26ddbb01490b8ae8d7e139619c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:47</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e161e26ddbb01490b8ae8d7e13961916</table>
+        <value>{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].windows_error_code}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error</field>
+        <id>e161e26ddbb01490b8ae8d7e13961916</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:47</sys_created_on>
+        <sys_id>8261e26ddbb01490b8ae8d7e139619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:47</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e161e26ddbb01490b8ae8d7e13961916</table>
+        <value>{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>formatresults</field>
+        <id>e161e26ddbb01490b8ae8d7e13961916</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:47</sys_created_on>
+        <sys_id>0a61e26ddbb01490b8ae8d7e139619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:47</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e161e26ddbb01490b8ae8d7e13961916</table>
+        <value>{{step[6b07d2c9-df7f-4fcc-b1c6-55b292909f45].formatresult}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>results</field>
+        <id>e161e26ddbb01490b8ae8d7e13961916</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:47</sys_created_on>
+        <sys_id>4661e26ddbb01490b8ae8d7e139619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:47</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e161e26ddbb01490b8ae8d7e13961916</table>
+        <value>{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].output}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=e161e26ddbb01490b8ae8d7e13961916^sys_idNOT IN2561e26ddbb01490b8ae8d7e13961937,bd61e26ddbb01490b8ae8d7e1396194a"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Stop/Start/Restart Service">e161e26ddbb01490b8ae8d7e13961916</action>
+        <cid>620b6cb2-9012-4945-978d-4f95956cf4cf</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Manipulate Services</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="PowerShell">486f577a3721030003a08fb77e41f1d6</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>2561e26ddbb01490b8ae8d7e13961937</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2561e26ddbb01490b8ae8d7e13961937"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2561e26ddbb01490b8ae8d7e13961937</document_key>
+        <order>160</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>3161e26ddbb01490b8ae8d7e13961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="">2183a3fa3721030003a08fb77e41f1c2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2561e26ddbb01490b8ae8d7e13961937</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>3d61e26ddbb01490b8ae8d7e13961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="">4ecf1b7a3721030003a08fb77e41f149</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2561e26ddbb01490b8ae8d7e13961937</document_key>
+        <order>92</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>7961e26ddbb01490b8ae8d7e13961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">306d63c25f101300a09a2abd7f466627</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2561e26ddbb01490b8ae8d7e13961937</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>7d61e26ddbb01490b8ae8d7e13961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <value>427709a60a0006bc7d2904e99132532d</value>
+        <variable display_value="">2046cd992f201300a09a839fb18c956d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2561e26ddbb01490b8ae8d7e13961937</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>b561e26ddbb01490b8ae8d7e13961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <value>659544c9db381090b8ae8d7e139619ed</value>
+        <variable display_value="">5c30ab7a3721030003a08fb77e41f12e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2561e26ddbb01490b8ae8d7e13961937</document_key>
+        <order>140</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>f161e26ddbb01490b8ae8d7e13961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <value>#******* Format to access Input Parameters *******&#13;
+# To use variable, prefix with '$'. eg. $message&#13;
+# Read more https://docs.servicenow.com/?context=CSHelp:IntegrationHub-PowerShell-Step&#13;
+&#13;
+#******* Reserved variables available when remoting type is Run on MID&#13;
+# $computer   Host IP resolved from Connection alias&#13;
+# $cred       Credential Object. Credential resolved via connection alias or credential alias. This can be used in conjunction with any cmd-let which support credential parameter eg. New-PSSession -credential $cred&#13;
+# $log_info   mid property "mid.property.powershell.log_info" set on instance to enable debugging. So it's a flag available to act on and add any verbose logging if they want to in their script&#13;
+&#13;
+if($action -eq 'start'){&#13;
+    invoke-command -ScriptBlock {Start-Service -Name $svcName}&#13;
+}&#13;
+elseif($action -eq 'stop'){&#13;
+    invoke-command -ScriptBlock {Stop-Service -Name $svcName}&#13;
+}&#13;
+elseif($action -eq 'suspend'){&#13;
+    invoke-command -ScriptBlock {Suspend-Service -Name $svcName}&#13;
+}&#13;
+elseif($action -eq 'restart'){&#13;
+    invoke-command -ScriptBlock {Restart-Service -Name $svcName}&#13;
+}</value>
+        <variable display_value="">c54323fa3721030003a08fb77e41f16e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2561e26ddbb01490b8ae8d7e13961937</document_key>
+        <order>130</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>fd61e26ddbb01490b8ae8d7e13961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <value>inline_script</value>
+        <variable display_value="">e6f26fba3721030003a08fb77e41f1eb</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2561e26ddbb01490b8ae8d7e13961937"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>2561e26ddbb01490b8ae8d7e13961937</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>b161e26ddbb01490b8ae8d7e13961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>2561e26ddbb01490b8ae8d7e13961937</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>b561e26ddbb01490b8ae8d7e13961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>command</field>
+        <id>2561e26ddbb01490b8ae8d7e13961937</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>3d61e26ddbb01490b8ae8d7e13961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>2561e26ddbb01490b8ae8d7e13961937</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>3961e26ddbb01490b8ae8d7e13961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>credential_alias</field>
+        <id>2561e26ddbb01490b8ae8d7e13961937</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>fd61e26ddbb01490b8ae8d7e13961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>host</field>
+        <id>2561e26ddbb01490b8ae8d7e13961937</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>7561e26ddbb01490b8ae8d7e13961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value>{{action.host}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_variables</field>
+        <id>2561e26ddbb01490b8ae8d7e13961937</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>7961e26ddbb01490b8ae8d7e13961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value>{"action":"{{action.action}}","svcName":"{{action.svcname}}"}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script_type</field>
+        <id>2561e26ddbb01490b8ae8d7e13961937</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>f961e26ddbb01490b8ae8d7e13961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=2561e26ddbb01490b8ae8d7e13961937^sys_idNOT IN2d61e26ddbb01490b8ae8d7e1396193b"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=c83daa72-0018-4328-af2a-624b148f1eef</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Manipulate Services">2561e26ddbb01490b8ae8d7e13961937</model>
+        <model_id>2561e26ddbb01490b8ae8d7e13961937</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_2561e26ddbb01490b8ae8d7e13961937</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>2d61e26ddbb01490b8ae8d7e1396193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Stop/Start/Restart Service">e161e26ddbb01490b8ae8d7e13961916</action>
+        <cid>6b07d2c9-df7f-4fcc-b1c6-55b292909f45</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Format output for work notes</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>bd61e26ddbb01490b8ae8d7e1396194a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:46</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=bd61e26ddbb01490b8ae8d7e1396194a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bd61e26ddbb01490b8ae8d7e1396194a</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:46</sys_created_on>
+        <sys_id>7961e26ddbb01490b8ae8d7e1396195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:46</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+  try{
+  	var frmtOutput = 'Service request results:&lt;br/&gt;';
+  	var rawInput = inputs.result;
+   
+    // Format the output to be used in work notes and be in courier font
+    
+    //frmtOutput += rawInput.replace(/(\r\n|\n|\r)/gm,"&lt;br/&gt;").replace(/ {1,}/g," ");
+  	frmtOutput += rawInput.replace(/(\r\n|\n|\r)/gm,"&lt;br/&gt;");
+  	var formatted1 = '[code]&lt;pre&gt;&lt;code&gt;' + frmtOutput + '&lt;/code&gt;&lt;/pre&gt;[/code]';
+  	outputs.formatresult = formatted1;
+  } catch (e) {
+    gs.info('Error formatting output: ' + e);
+  }
+
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bd61e26ddbb01490b8ae8d7e1396194a</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:46</sys_created_on>
+        <sys_id>b561e26ddbb01490b8ae8d7e1396195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:46</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=bd61e26ddbb01490b8ae8d7e1396194a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>bd61e26ddbb01490b8ae8d7e1396194a</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:46</sys_created_on>
+        <sys_id>7161e26ddbb01490b8ae8d7e1396195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:46</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>result</field>
+        <id>bd61e26ddbb01490b8ae8d7e1396194a</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:46</sys_created_on>
+        <sys_id>f161e26ddbb01490b8ae8d7e1396195e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:46</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_bd61e26ddbb01490b8ae8d7e1396194a</table>
+        <value>{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].output}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>bd61e26ddbb01490b8ae8d7e1396194a</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:46</sys_created_on>
+        <sys_id>3561e26ddbb01490b8ae8d7e1396195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:46</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=bd61e26ddbb01490b8ae8d7e1396194a^sys_idNOT IN3961e26ddbb01490b8ae8d7e1396194d"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>result</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>result</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Format output for work notes">bd61e26ddbb01490b8ae8d7e1396194a</model>
+        <model_id>bd61e26ddbb01490b8ae8d7e1396194a</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_bd61e26ddbb01490b8ae8d7e1396194a</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>3961e26ddbb01490b8ae8d7e1396194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=bd61e26ddbb01490b8ae8d7e1396194a^sys_idNOT INb561e26ddbb01490b8ae8d7e13961954"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d2465418-d705-496d-b3be-2e832006442f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>formatresult</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>formatResult</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Format output for work notes">bd61e26ddbb01490b8ae8d7e1396194a</model>
+        <model_id>bd61e26ddbb01490b8ae8d7e1396194a</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_bd61e26ddbb01490b8ae8d7e1396194a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:46</sys_created_on>
+        <sys_id>b561e26ddbb01490b8ae8d7e13961954</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=e161e26ddbb01490b8ae8d7e13961916^sys_idNOT IN2161e26ddbb01490b8ae8d7e13961930,6161e26ddbb01490b8ae8d7e13961917,6161e26ddbb01490b8ae8d7e1396192a"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=78132465-c049-4bd6-9eb5-37e0008adc4b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>action</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>action</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Stop/Start/Restart Service">e161e26ddbb01490b8ae8d7e13961916</model>
+        <model_id>e161e26ddbb01490b8ae8d7e13961916</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_e161e26ddbb01490b8ae8d7e13961916</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>2161e26ddbb01490b8ae8d7e13961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=41a8e8d7-b371-474f-b26f-801574f0f3ab</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>host</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>host</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Stop/Start/Restart Service">e161e26ddbb01490b8ae8d7e13961916</model>
+        <model_id>e161e26ddbb01490b8ae8d7e13961916</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_e161e26ddbb01490b8ae8d7e13961916</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:44</sys_created_on>
+        <sys_id>6161e26ddbb01490b8ae8d7e13961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f380510e-73a9-4b14-ac4a-006cd7923009</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>svcname</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>svcName</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Stop/Start/Restart Service">e161e26ddbb01490b8ae8d7e13961916</model>
+        <model_id>e161e26ddbb01490b8ae8d7e13961916</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_e161e26ddbb01490b8ae8d7e13961916</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>6161e26ddbb01490b8ae8d7e1396192a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=e161e26ddbb01490b8ae8d7e13961916^sys_idNOT IN0661e26ddbb01490b8ae8d7e1396196d,0661e26ddbb01490b8ae8d7e13961973,3561e26ddbb01490b8ae8d7e13961967,3d61e26ddbb01490b8ae8d7e13961960"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=1ca6a8d4-1a22-45f4-a5b4-4cb77f7d7bb5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>errcode</element>
+        <element_prototype display_value="Windows error code" element="windows_error_code" name="var__m_sys_flow_step_definition_output_486f577a3721030003a08fb77e41f1d6">8ec362673702030003a08fb77e41f1b6</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>errCode</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Stop/Start/Restart Service">e161e26ddbb01490b8ae8d7e13961916</model>
+        <model_id>e161e26ddbb01490b8ae8d7e13961916</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_e161e26ddbb01490b8ae8d7e13961916</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:46</sys_created_on>
+        <sys_id>0661e26ddbb01490b8ae8d7e1396196d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=2906df15-f4c5-487f-a766-63c22ff30f87</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>formatresults</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>formatResults</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Stop/Start/Restart Service">e161e26ddbb01490b8ae8d7e13961916</model>
+        <model_id>e161e26ddbb01490b8ae8d7e13961916</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_e161e26ddbb01490b8ae8d7e13961916</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:46</sys_created_on>
+        <sys_id>0661e26ddbb01490b8ae8d7e13961973</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=3d05088c-f6fe-4236-b205-5902b4fcba62</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error</element>
+        <element_prototype display_value="Error Message" element="error_message" name="var__m_sys_flow_step_definition_output_486f577a3721030003a08fb77e41f1d6">1d8196c7e703030007a64caac2f6a999</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>error</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Stop/Start/Restart Service">e161e26ddbb01490b8ae8d7e13961916</model>
+        <model_id>e161e26ddbb01490b8ae8d7e13961916</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_e161e26ddbb01490b8ae8d7e13961916</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:46</sys_created_on>
+        <sys_id>3561e26ddbb01490b8ae8d7e13961967</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=f69cb2c4-37a1-47e1-9b6e-d8e66aaf85b0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>results</element>
+        <element_prototype display_value="Output" element="output" name="var__m_sys_flow_step_definition_output_486f577a3721030003a08fb77e41f1d6">4b98e37e3721030003a08fb77e41f1aa</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>results</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Stop/Start/Restart Service">e161e26ddbb01490b8ae8d7e13961916</model>
+        <model_id>e161e26ddbb01490b8ae8d7e13961916</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_e161e26ddbb01490b8ae8d7e13961916</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:46</sys_created_on>
+        <sys_id>3d61e26ddbb01490b8ae8d7e13961960</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_step_instance action="delete_multiple" query="action=e161e26ddbb01490b8ae8d7e13961916^sys_idNOT IN2561e26ddbb01490b8ae8d7e13961937,bd61e26ddbb01490b8ae8d7e1396194a"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Stop/Start/Restart Service">e161e26ddbb01490b8ae8d7e13961916</action>
+        <cid>620b6cb2-9012-4945-978d-4f95956cf4cf</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Manipulate Services</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="PowerShell">486f577a3721030003a08fb77e41f1d6</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>2561e26ddbb01490b8ae8d7e13961937</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2561e26ddbb01490b8ae8d7e13961937"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2561e26ddbb01490b8ae8d7e13961937</document_key>
+        <order>160</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>3161e26ddbb01490b8ae8d7e13961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="">2183a3fa3721030003a08fb77e41f1c2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2561e26ddbb01490b8ae8d7e13961937</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>3d61e26ddbb01490b8ae8d7e13961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="">4ecf1b7a3721030003a08fb77e41f149</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2561e26ddbb01490b8ae8d7e13961937</document_key>
+        <order>92</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>7961e26ddbb01490b8ae8d7e13961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">306d63c25f101300a09a2abd7f466627</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2561e26ddbb01490b8ae8d7e13961937</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>7d61e26ddbb01490b8ae8d7e13961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <value>427709a60a0006bc7d2904e99132532d</value>
+        <variable display_value="">2046cd992f201300a09a839fb18c956d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2561e26ddbb01490b8ae8d7e13961937</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>b561e26ddbb01490b8ae8d7e13961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <value>659544c9db381090b8ae8d7e139619ed</value>
+        <variable display_value="">5c30ab7a3721030003a08fb77e41f12e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2561e26ddbb01490b8ae8d7e13961937</document_key>
+        <order>140</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>f161e26ddbb01490b8ae8d7e13961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <value>#******* Format to access Input Parameters *******&#13;
+# To use variable, prefix with '$'. eg. $message&#13;
+# Read more https://docs.servicenow.com/?context=CSHelp:IntegrationHub-PowerShell-Step&#13;
+&#13;
+#******* Reserved variables available when remoting type is Run on MID&#13;
+# $computer   Host IP resolved from Connection alias&#13;
+# $cred       Credential Object. Credential resolved via connection alias or credential alias. This can be used in conjunction with any cmd-let which support credential parameter eg. New-PSSession -credential $cred&#13;
+# $log_info   mid property "mid.property.powershell.log_info" set on instance to enable debugging. So it's a flag available to act on and add any verbose logging if they want to in their script&#13;
+&#13;
+if($action -eq 'start'){&#13;
+    invoke-command -ScriptBlock {Start-Service -Name $svcName}&#13;
+}&#13;
+elseif($action -eq 'stop'){&#13;
+    invoke-command -ScriptBlock {Stop-Service -Name $svcName}&#13;
+}&#13;
+elseif($action -eq 'suspend'){&#13;
+    invoke-command -ScriptBlock {Suspend-Service -Name $svcName}&#13;
+}&#13;
+elseif($action -eq 'restart'){&#13;
+    invoke-command -ScriptBlock {Restart-Service -Name $svcName}&#13;
+}</value>
+        <variable display_value="">c54323fa3721030003a08fb77e41f16e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2561e26ddbb01490b8ae8d7e13961937</document_key>
+        <order>130</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>fd61e26ddbb01490b8ae8d7e13961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <value>inline_script</value>
+        <variable display_value="">e6f26fba3721030003a08fb77e41f1eb</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2561e26ddbb01490b8ae8d7e13961937"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>2561e26ddbb01490b8ae8d7e13961937</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>b161e26ddbb01490b8ae8d7e13961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>2561e26ddbb01490b8ae8d7e13961937</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>b561e26ddbb01490b8ae8d7e13961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>command</field>
+        <id>2561e26ddbb01490b8ae8d7e13961937</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>3d61e26ddbb01490b8ae8d7e13961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>2561e26ddbb01490b8ae8d7e13961937</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>3961e26ddbb01490b8ae8d7e13961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>credential_alias</field>
+        <id>2561e26ddbb01490b8ae8d7e13961937</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>fd61e26ddbb01490b8ae8d7e13961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>host</field>
+        <id>2561e26ddbb01490b8ae8d7e13961937</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>7561e26ddbb01490b8ae8d7e13961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value>{{action.host}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input_variables</field>
+        <id>2561e26ddbb01490b8ae8d7e13961937</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>7961e26ddbb01490b8ae8d7e13961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value>{"action":"{{action.action}}","svcName":"{{action.svcname}}"}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script_type</field>
+        <id>2561e26ddbb01490b8ae8d7e13961937</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>f961e26ddbb01490b8ae8d7e13961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=2561e26ddbb01490b8ae8d7e13961937^sys_idNOT IN2d61e26ddbb01490b8ae8d7e1396193b"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=c83daa72-0018-4328-af2a-624b148f1eef</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Manipulate Services">2561e26ddbb01490b8ae8d7e13961937</model>
+        <model_id>2561e26ddbb01490b8ae8d7e13961937</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_2561e26ddbb01490b8ae8d7e13961937</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>2d61e26ddbb01490b8ae8d7e1396193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Stop/Start/Restart Service">e161e26ddbb01490b8ae8d7e13961916</action>
+        <cid>6b07d2c9-df7f-4fcc-b1c6-55b292909f45</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Format output for work notes</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>bd61e26ddbb01490b8ae8d7e1396194a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:46</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=bd61e26ddbb01490b8ae8d7e1396194a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bd61e26ddbb01490b8ae8d7e1396194a</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:46</sys_created_on>
+        <sys_id>7961e26ddbb01490b8ae8d7e1396195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:46</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+  try{
+  	var frmtOutput = 'Service request results:&lt;br/&gt;';
+  	var rawInput = inputs.result;
+   
+    // Format the output to be used in work notes and be in courier font
+    
+    //frmtOutput += rawInput.replace(/(\r\n|\n|\r)/gm,"&lt;br/&gt;").replace(/ {1,}/g," ");
+  	frmtOutput += rawInput.replace(/(\r\n|\n|\r)/gm,"&lt;br/&gt;");
+  	var formatted1 = '[code]&lt;pre&gt;&lt;code&gt;' + frmtOutput + '&lt;/code&gt;&lt;/pre&gt;[/code]';
+  	outputs.formatresult = formatted1;
+  } catch (e) {
+    gs.info('Error formatting output: ' + e);
+  }
+
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bd61e26ddbb01490b8ae8d7e1396194a</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:46</sys_created_on>
+        <sys_id>b561e26ddbb01490b8ae8d7e1396195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:46</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=bd61e26ddbb01490b8ae8d7e1396194a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>bd61e26ddbb01490b8ae8d7e1396194a</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:46</sys_created_on>
+        <sys_id>7161e26ddbb01490b8ae8d7e1396195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:46</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>result</field>
+        <id>bd61e26ddbb01490b8ae8d7e1396194a</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:46</sys_created_on>
+        <sys_id>f161e26ddbb01490b8ae8d7e1396195e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:46</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_bd61e26ddbb01490b8ae8d7e1396194a</table>
+        <value>{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].output}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>bd61e26ddbb01490b8ae8d7e1396194a</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:46</sys_created_on>
+        <sys_id>3561e26ddbb01490b8ae8d7e1396195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:46</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=bd61e26ddbb01490b8ae8d7e1396194a^sys_idNOT IN3961e26ddbb01490b8ae8d7e1396194d"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>result</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>result</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Format output for work notes">bd61e26ddbb01490b8ae8d7e1396194a</model>
+        <model_id>bd61e26ddbb01490b8ae8d7e1396194a</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_bd61e26ddbb01490b8ae8d7e1396194a</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>3961e26ddbb01490b8ae8d7e1396194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=bd61e26ddbb01490b8ae8d7e1396194a^sys_idNOT INb561e26ddbb01490b8ae8d7e13961954"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d2465418-d705-496d-b3be-2e832006442f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>formatresult</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>formatResult</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Format output for work notes">bd61e26ddbb01490b8ae8d7e1396194a</model>
+        <model_id>bd61e26ddbb01490b8ae8d7e1396194a</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_bd61e26ddbb01490b8ae8d7e1396194a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:46</sys_created_on>
+        <sys_id>b561e26ddbb01490b8ae8d7e13961954</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_e161e26ddbb01490b8ae8d7e13961916^sys_idNOT IN2d61e26ddbb01490b8ae8d7e13961934,6d61e26ddbb01490b8ae8d7e1396192e,e561e26ddbb01490b8ae8d7e1396191c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>action</element>
+        <help/>
+        <hint/>
+        <label>action</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e161e26ddbb01490b8ae8d7e13961916</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>2d61e26ddbb01490b8ae8d7e13961934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>svcname</element>
+        <help/>
+        <hint/>
+        <label>svcName</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e161e26ddbb01490b8ae8d7e13961916</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>6d61e26ddbb01490b8ae8d7e1396192e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>host</element>
+        <help/>
+        <hint/>
+        <label>host</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e161e26ddbb01490b8ae8d7e13961916</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:45</sys_created_on>
+        <sys_id>e561e26ddbb01490b8ae8d7e1396191c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_e161e26ddbb01490b8ae8d7e13961916^sys_idNOT IN0a61e26ddbb01490b8ae8d7e13961984,4261e26ddbb01490b8ae8d7e1396196c,4261e26ddbb01490b8ae8d7e13961972,7161e26ddbb01490b8ae8d7e13961966"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>formatresults</element>
+        <help/>
+        <hint/>
+        <label>formatResults</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e161e26ddbb01490b8ae8d7e13961916</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:46</sys_created_on>
+        <sys_id>0a61e26ddbb01490b8ae8d7e13961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error</element>
+        <help/>
+        <hint/>
+        <label>error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e161e26ddbb01490b8ae8d7e13961916</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:46</sys_created_on>
+        <sys_id>4261e26ddbb01490b8ae8d7e1396196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>errcode</element>
+        <help/>
+        <hint/>
+        <label>errCode</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e161e26ddbb01490b8ae8d7e13961916</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:46</sys_created_on>
+        <sys_id>4261e26ddbb01490b8ae8d7e13961972</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>results</element>
+        <help/>
+        <hint/>
+        <label>results</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e161e26ddbb01490b8ae8d7e13961916</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-15 17:32:46</sys_created_on>
+        <sys_id>7161e26ddbb01490b8ae8d7e13961966</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-15 17:32:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

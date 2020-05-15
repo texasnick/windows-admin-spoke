@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias">
+    <sys_alias action="DELETE">
+        <configuration_template/>
+        <connection_type>http_connection</connection_type>
+        <id>x_snc_win_spoke.windowsAdmin</id>
+        <multiple_connections>false</multiple_connections>
+        <name>windowsAdmin</name>
+        <retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy>
+        <sys_class_name>sys_alias</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-13 16:44:46</sys_created_on>
+        <sys_id>e8334409db381090b8ae8d7e139619c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_win_spoke.windowsAdmin</sys_name>
+        <sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name>sys_alias_e8334409db381090b8ae8d7e139619c1</sys_update_name>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-13 16:44:46</sys_updated_on>
+        <type>credential</type>
+    </sys_alias>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</application>
+        <file_path/>
+        <instance_id>9efd329f9b8cd3447ac36b8af359fffe</instance_id>
+        <instance_name>nryansc03</instance_name>
+        <name>sys_alias_e8334409db381090b8ae8d7e139619c1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias"><sys_alias action="INSERT_OR_UPDATE"><configuration_template/><connection_type>http_connection</connection_type><id>x_snc_win_spoke.windowsAdmin</id><multiple_connections>false</multiple_connections><name>windowsAdmin</name><retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy><sys_class_name>sys_alias</sys_class_name><sys_created_by>nick.ryan</sys_created_by><sys_created_on>2020-05-13 16:44:46</sys_created_on><sys_id>e8334409db381090b8ae8d7e139619c1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_win_spoke.windowsAdmin</sys_name><sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package><sys_policy/><sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope><sys_update_name>sys_alias_e8334409db381090b8ae8d7e139619c1</sys_update_name><sys_updated_by>nick.ryan</sys_updated_by><sys_updated_on>2020-05-13 16:44:46</sys_updated_on><type>credential</type></sys_alias></record_update>]]></payload>
+        <payload_hash>590659133</payload_hash>
+        <record_name>x_snc_win_spoke.windowsAdmin</record_name>
+        <reverted_from/>
+        <source>063e7b70db381090b8ae8d7e1396191c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-13 16:44:46</sys_created_on>
+        <sys_id>93330409db381090b8ae8d7e1396199a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1720eec99ac0000001</sys_recorded_at>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-13 16:44:46</sys_updated_on>
+        <type>Connection &amp; Credential Aliases</type>
+        <update_guid>9b33040951381090bf405573a5bef199</update_guid>
+        <update_guid_history>9b33040951381090bf405573a5bef199:590659133</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-13 16:44:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_alias">sys_alias</sys_db_object>
+        <sys_id>493c8671b9ac47a7a89e1c4a48e04901</sys_id>
+        <sys_metadata>e8334409db381090b8ae8d7e139619c1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_win_spoke.windowsAdmin</sys_name>
+        <sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_scope_delete display_value="">6edc6b6a002f4ad0be62d4e126645840</sys_scope_delete>
+        <sys_update_name>sys_alias_e8334409db381090b8ae8d7e139619c1</sys_update_name>
+        <sys_update_version display_value="sys_alias_e8334409db381090b8ae8d7e139619c1">93330409db381090b8ae8d7e1396199a</sys_update_version>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-13 16:44:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

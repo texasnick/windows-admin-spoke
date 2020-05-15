@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_category">
+    <sys_hub_category action="INSERT_OR_UPDATE">
+        <name>Data Retrieval</name>
+        <order>100</order>
+        <sys_class_name>sys_hub_category</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2020-05-13 16:30:20</sys_created_on>
+        <sys_id>f1ef7334db381090b8ae8d7e1396198d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Data Retrieval</sys_name>
+        <sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
+        <sys_update_name>sys_hub_category_f1ef7334db381090b8ae8d7e1396198d</sys_update_name>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2020-05-13 16:30:20</sys_updated_on>
+    </sys_hub_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=f1ef7334db381090b8ae8d7e1396198d"/>
+</record_update>
