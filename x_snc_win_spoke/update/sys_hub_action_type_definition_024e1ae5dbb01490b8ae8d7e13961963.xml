@@ -13,7 +13,7 @@
         <ih_action>true</ih_action>
         <internal_name>stopstartrestart_service</internal_name>
         <label_cache>[{"name":"{{action.host}}","label":"action➛host","type":"action","ref":""},{"name":"{{action.procname}}","label":"action➛svcName","type":"action","ref":""},{"name":"{{action.svcname}}","label":"action➛svcName","type":"action","ref":""},{"name":"{{action.action}}","label":"action➛action","type":"action","ref":""},{"name":"{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].output}}","label":"step➛Manipulate Services➛Output","type":"step","ref":""},{"name":"{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].error_message}}","label":"step➛Manipulate Services➛Error Message","type":"step","ref":""},{"name":"{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].windows_error_code}}","label":"step➛Manipulate Services➛Windows error code","type":"step","ref":""},{"name":"{{step[6b07d2c9-df7f-4fcc-b1c6-55b292909f45].variable}}","label":"step➛Format output for work notes➛variable","type":"step","ref":""},{"name":"{{step[6b07d2c9-df7f-4fcc-b1c6-55b292909f45].formatresult}}","label":"step➛Format output for work notes➛formatResult","type":"step","ref":""},{"name":"{{step[6b07d2c9-df7f-4fcc-b1c6-55b292909f45].formatted_resuts2}}","label":"step➛Format output for work notes➛Formatted Resuts2","type":"step","ref":""},{"name":"{{step[6b07d2c9-df7f-4fcc-b1c6-55b292909f45].formatresult2}}","label":"step➛Format output for work notes➛Formatted Resuts2","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>b861a26ddbb01490b8ae8d7e139619aa</latest_snapshot>
+        <latest_snapshot>f1f06fe6db389890b8ae8d7e1396194f</latest_snapshot>
         <master_snapshot>e161e26ddbb01490b8ae8d7e13961916</master_snapshot>
         <name>Stop/Start/Restart Service</name>
         <natlang/>
@@ -25,7 +25,7 @@
         <sys_created_on>2020-05-15 17:19:08</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>024e1ae5dbb01490b8ae8d7e13961963</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Stop/Start/Restart Service</sys_name>
         <sys_overrides/>
         <sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_024e1ae5dbb01490b8ae8d7e13961963</sys_update_name>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 17:32:47</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:44:30</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -106,14 +106,14 @@
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 17:19:08</sys_created_on>
         <sys_id>124e1ae5dbb01490b8ae8d7e13961982</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 17:32:39</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:44:20</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=124e1ae5dbb01490b8ae8d7e13961982"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -208,9 +208,9 @@
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 17:19:09</sys_created_on>
         <sys_id>de4e1ae5dbb01490b8ae8d7e13961991</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 17:32:31</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:44:15</sys_updated_on>
         <value>#******* Format to access Input Parameters *******&#13;
 # To use variable, prefix with '$'. eg. $message&#13;
 # Read more https://docs.servicenow.com/?context=CSHelp:IntegrationHub-PowerShell-Step&#13;
@@ -221,16 +221,16 @@
 # $log_info   mid property "mid.property.powershell.log_info" set on instance to enable debugging. So it's a flag available to act on and add any verbose logging if they want to in their script&#13;
 &#13;
 if($action -eq 'start'){&#13;
-    invoke-command -ScriptBlock {Start-Service -Name $svcName}&#13;
+    invoke-command -ComputerName $hostConn -Credential($cred) -ScriptBlock {Start-Service -Name $svcName}&#13;
 }&#13;
 elseif($action -eq 'stop'){&#13;
-    invoke-command -ScriptBlock {Stop-Service -Name $svcName}&#13;
+    invoke-command -ComputerName $hostConn -Credential($cred) -ScriptBlock {Stop-Service -Name $svcName}&#13;
 }&#13;
 elseif($action -eq 'suspend'){&#13;
-    invoke-command -ScriptBlock {Suspend-Service -Name $svcName}&#13;
+    invoke-command -ComputerName $hostConn -Credential($cred) -ScriptBlock {Suspend-Service -Name $svcName}&#13;
 }&#13;
 elseif($action -eq 'restart'){&#13;
-    invoke-command -ScriptBlock {Restart-Service -Name $svcName}&#13;
+    invoke-command -ComputerName $hostConn -Credential($cred) -ScriptBlock {Restart-Service -Name $svcName}&#13;
 }</value>
         <variable display_value="">c54323fa3721030003a08fb77e41f16e</variable>
     </sys_variable_value>
@@ -313,11 +313,11 @@ elseif($action -eq 'restart'){&#13;
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 17:19:09</sys_created_on>
         <sys_id>564e1ae5dbb01490b8ae8d7e13961990</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 17:32:39</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:44:20</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
-        <value>{"action":"{{action.action}}","svcName":"{{action.svcname}}"}</value>
+        <value>{"action":"{{action.action}}","hostConn":"{{action.host}}","svcName":"{{action.svcname}}"}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script_type</field>
@@ -995,14 +995,14 @@ elseif($action -eq 'restart'){&#13;
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 17:19:09</sys_created_on>
         <sys_id>264e1ae5dbb01490b8ae8d7e139619dd</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 17:32:39</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:44:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1078,14 +1078,14 @@ elseif($action -eq 'restart'){&#13;
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 17:19:09</sys_created_on>
         <sys_id>2e4e1ae5dbb01490b8ae8d7e139619e3</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 17:32:40</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:44:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1161,14 +1161,14 @@ elseif($action -eq 'restart'){&#13;
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 17:19:10</sys_created_on>
         <sys_id>e24e1ae5dbb01490b8ae8d7e139619f6</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 17:32:40</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:44:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1281,14 +1281,14 @@ elseif($action -eq 'restart'){&#13;
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 17:19:08</sys_created_on>
         <sys_id>124e1ae5dbb01490b8ae8d7e13961982</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 17:32:39</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:44:20</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=124e1ae5dbb01490b8ae8d7e13961982"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1383,9 +1383,9 @@ elseif($action -eq 'restart'){&#13;
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 17:19:09</sys_created_on>
         <sys_id>de4e1ae5dbb01490b8ae8d7e13961991</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 17:32:31</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:44:15</sys_updated_on>
         <value>#******* Format to access Input Parameters *******&#13;
 # To use variable, prefix with '$'. eg. $message&#13;
 # Read more https://docs.servicenow.com/?context=CSHelp:IntegrationHub-PowerShell-Step&#13;
@@ -1396,16 +1396,16 @@ elseif($action -eq 'restart'){&#13;
 # $log_info   mid property "mid.property.powershell.log_info" set on instance to enable debugging. So it's a flag available to act on and add any verbose logging if they want to in their script&#13;
 &#13;
 if($action -eq 'start'){&#13;
-    invoke-command -ScriptBlock {Start-Service -Name $svcName}&#13;
+    invoke-command -ComputerName $hostConn -Credential($cred) -ScriptBlock {Start-Service -Name $svcName}&#13;
 }&#13;
 elseif($action -eq 'stop'){&#13;
-    invoke-command -ScriptBlock {Stop-Service -Name $svcName}&#13;
+    invoke-command -ComputerName $hostConn -Credential($cred) -ScriptBlock {Stop-Service -Name $svcName}&#13;
 }&#13;
 elseif($action -eq 'suspend'){&#13;
-    invoke-command -ScriptBlock {Suspend-Service -Name $svcName}&#13;
+    invoke-command -ComputerName $hostConn -Credential($cred) -ScriptBlock {Suspend-Service -Name $svcName}&#13;
 }&#13;
 elseif($action -eq 'restart'){&#13;
-    invoke-command -ScriptBlock {Restart-Service -Name $svcName}&#13;
+    invoke-command -ComputerName $hostConn -Credential($cred) -ScriptBlock {Restart-Service -Name $svcName}&#13;
 }</value>
         <variable display_value="">c54323fa3721030003a08fb77e41f16e</variable>
     </sys_variable_value>
@@ -1488,11 +1488,11 @@ elseif($action -eq 'restart'){&#13;
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 17:19:09</sys_created_on>
         <sys_id>564e1ae5dbb01490b8ae8d7e13961990</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 17:32:39</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:44:20</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
-        <value>{"action":"{{action.action}}","svcName":"{{action.svcname}}"}</value>
+        <value>{"action":"{{action.action}}","hostConn":"{{action.host}}","svcName":"{{action.svcname}}"}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script_type</field>
@@ -2028,13 +2028,13 @@ elseif($action -eq 'restart'){&#13;
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Stop/Start/Restart Service">024e1ae5dbb01490b8ae8d7e13961963</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"fe61266ddbb01490b8ae8d7e13961988","name":"plan"}}</plan>
-        <snapshot>b861a26ddbb01490b8ae8d7e139619aa</snapshot>
+        <snapshot>f1f06fe6db389890b8ae8d7e1396194f</snapshot>
         <sys_class_name>sys_hub_action_plan</sys_class_name>
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 17:32:50</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>fe61266ddbb01490b8ae8d7e13961988</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2042,7 +2042,7 @@ elseif($action -eq 'restart'){&#13;
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 17:32:50</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:44:33</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2148,14 +2148,14 @@ elseif($action -eq 'restart'){&#13;
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 17:32:45</sys_created_on>
         <sys_id>2561e26ddbb01490b8ae8d7e13961937</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:44:28</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2561e26ddbb01490b8ae8d7e13961937"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2236,9 +2236,9 @@ elseif($action -eq 'restart'){&#13;
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 17:32:45</sys_created_on>
         <sys_id>f161e26ddbb01490b8ae8d7e13961947</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:44:28</sys_updated_on>
         <value>#******* Format to access Input Parameters *******&#13;
 # To use variable, prefix with '$'. eg. $message&#13;
 # Read more https://docs.servicenow.com/?context=CSHelp:IntegrationHub-PowerShell-Step&#13;
@@ -2249,16 +2249,16 @@ elseif($action -eq 'restart'){&#13;
 # $log_info   mid property "mid.property.powershell.log_info" set on instance to enable debugging. So it's a flag available to act on and add any verbose logging if they want to in their script&#13;
 &#13;
 if($action -eq 'start'){&#13;
-    invoke-command -ScriptBlock {Start-Service -Name $svcName}&#13;
+    invoke-command -ComputerName $hostConn -Credential($cred) -ScriptBlock {Start-Service -Name $svcName}&#13;
 }&#13;
 elseif($action -eq 'stop'){&#13;
-    invoke-command -ScriptBlock {Stop-Service -Name $svcName}&#13;
+    invoke-command -ComputerName $hostConn -Credential($cred) -ScriptBlock {Stop-Service -Name $svcName}&#13;
 }&#13;
 elseif($action -eq 'suspend'){&#13;
-    invoke-command -ScriptBlock {Suspend-Service -Name $svcName}&#13;
+    invoke-command -ComputerName $hostConn -Credential($cred) -ScriptBlock {Suspend-Service -Name $svcName}&#13;
 }&#13;
 elseif($action -eq 'restart'){&#13;
-    invoke-command -ScriptBlock {Restart-Service -Name $svcName}&#13;
+    invoke-command -ComputerName $hostConn -Credential($cred) -ScriptBlock {Restart-Service -Name $svcName}&#13;
 }</value>
         <variable display_value="">c54323fa3721030003a08fb77e41f16e</variable>
     </sys_variable_value>
@@ -2355,11 +2355,11 @@ elseif($action -eq 'restart'){&#13;
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 17:32:45</sys_created_on>
         <sys_id>7961e26ddbb01490b8ae8d7e13961945</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:44:28</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
-        <value>{"action":"{{action.action}}","svcName":"{{action.svcname}}"}</value>
+        <value>{"action":"{{action.action}}","hostConn":"{{action.host}}","svcName":"{{action.svcname}}"}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script_type</field>
@@ -3037,14 +3037,14 @@ elseif($action -eq 'restart'){&#13;
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 17:32:46</sys_created_on>
         <sys_id>0661e26ddbb01490b8ae8d7e1396196d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 17:32:47</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:44:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3203,14 +3203,14 @@ elseif($action -eq 'restart'){&#13;
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 17:32:46</sys_created_on>
         <sys_id>3561e26ddbb01490b8ae8d7e13961967</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 17:32:47</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:44:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3286,14 +3286,14 @@ elseif($action -eq 'restart'){&#13;
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 17:32:46</sys_created_on>
         <sys_id>3d61e26ddbb01490b8ae8d7e13961960</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 17:32:47</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:44:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3323,14 +3323,14 @@ elseif($action -eq 'restart'){&#13;
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 17:32:45</sys_created_on>
         <sys_id>2561e26ddbb01490b8ae8d7e13961937</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:44:28</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2561e26ddbb01490b8ae8d7e13961937"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3411,9 +3411,9 @@ elseif($action -eq 'restart'){&#13;
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 17:32:45</sys_created_on>
         <sys_id>f161e26ddbb01490b8ae8d7e13961947</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:44:28</sys_updated_on>
         <value>#******* Format to access Input Parameters *******&#13;
 # To use variable, prefix with '$'. eg. $message&#13;
 # Read more https://docs.servicenow.com/?context=CSHelp:IntegrationHub-PowerShell-Step&#13;
@@ -3424,16 +3424,16 @@ elseif($action -eq 'restart'){&#13;
 # $log_info   mid property "mid.property.powershell.log_info" set on instance to enable debugging. So it's a flag available to act on and add any verbose logging if they want to in their script&#13;
 &#13;
 if($action -eq 'start'){&#13;
-    invoke-command -ScriptBlock {Start-Service -Name $svcName}&#13;
+    invoke-command -ComputerName $hostConn -Credential($cred) -ScriptBlock {Start-Service -Name $svcName}&#13;
 }&#13;
 elseif($action -eq 'stop'){&#13;
-    invoke-command -ScriptBlock {Stop-Service -Name $svcName}&#13;
+    invoke-command -ComputerName $hostConn -Credential($cred) -ScriptBlock {Stop-Service -Name $svcName}&#13;
 }&#13;
 elseif($action -eq 'suspend'){&#13;
-    invoke-command -ScriptBlock {Suspend-Service -Name $svcName}&#13;
+    invoke-command -ComputerName $hostConn -Credential($cred) -ScriptBlock {Suspend-Service -Name $svcName}&#13;
 }&#13;
 elseif($action -eq 'restart'){&#13;
-    invoke-command -ScriptBlock {Restart-Service -Name $svcName}&#13;
+    invoke-command -ComputerName $hostConn -Credential($cred) -ScriptBlock {Restart-Service -Name $svcName}&#13;
 }</value>
         <variable display_value="">c54323fa3721030003a08fb77e41f16e</variable>
     </sys_variable_value>
@@ -3530,11 +3530,11 @@ elseif($action -eq 'restart'){&#13;
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 17:32:45</sys_created_on>
         <sys_id>7961e26ddbb01490b8ae8d7e13961945</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 17:32:45</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:44:28</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
-        <value>{"action":"{{action.action}}","svcName":"{{action.svcname}}"}</value>
+        <value>{"action":"{{action.action}}","hostConn":"{{action.host}}","svcName":"{{action.svcname}}"}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script_type</field>

@@ -13,7 +13,7 @@
         <ih_action>true</ih_action>
         <internal_name>stop_process</internal_name>
         <label_cache>[{"name":"{{action.host}}","label":"action➛host","type":"action","ref":""},{"name":"{{action.procname}}","label":"action➛svcName","type":"action","ref":""},{"name":"{{action.svcname}}","label":"action➛procID","type":"action","ref":""},{"name":"{{action.action}}","label":"action➛action","type":"action","ref":""},{"name":"{{action.procid}}","label":"action➛procID","type":"action","ref":""},{"name":"{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].output}}","label":"step➛Stop Process➛Output","type":"step","ref":""},{"name":"{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].error_message}}","label":"step➛Stop Process➛Error Message","type":"step","ref":""},{"name":"{{step[620b6cb2-9012-4945-978d-4f95956cf4cf].windows_error_code}}","label":"step➛Stop Process➛Windows error code","type":"step","ref":""},{"name":"{{step[6b07d2c9-df7f-4fcc-b1c6-55b292909f45].variable}}","label":"step➛Format output for work notes➛variable","type":"step","ref":""},{"name":"{{step[6b07d2c9-df7f-4fcc-b1c6-55b292909f45].formatresult}}","label":"step➛Format output for work notes➛formatResult","type":"step","ref":""},{"name":"{{step[6b07d2c9-df7f-4fcc-b1c6-55b292909f45].formatted_resuts2}}","label":"step➛Format output for work notes➛Formatted Resuts2","type":"step","ref":""},{"name":"{{step[6b07d2c9-df7f-4fcc-b1c6-55b292909f45].formatresult2}}","label":"step➛Format output for work notes➛Formatted Resuts2","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>8f2e6e25db341490b8ae8d7e1396195a</latest_snapshot>
+        <latest_snapshot>3321672adb389890b8ae8d7e1396190d</latest_snapshot>
         <master_snapshot>232e6e25db341490b8ae8d7e139619e4</master_snapshot>
         <name>Stop Process</name>
         <natlang/>
@@ -25,7 +25,7 @@
         <sys_created_on>2020-05-15 18:25:38</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>508d6ae1db341490b8ae8d7e13961930</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Stop Process</sys_name>
         <sys_overrides/>
         <sys_package display_value="Windows Admin Spoke" source="x_snc_win_spoke">863e7b70db381090b8ae8d7e1396191a</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_508d6ae1db341490b8ae8d7e13961930</sys_update_name>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 18:28:37</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:45:26</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -106,14 +106,14 @@
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 18:25:39</sys_created_on>
         <sys_id>a88d6ae1db341490b8ae8d7e13961963</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 18:28:24</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:45:12</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a88d6ae1db341490b8ae8d7e13961963"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -208,9 +208,9 @@
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 18:25:40</sys_created_on>
         <sys_id>f48d6ae1db341490b8ae8d7e1396199a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 18:28:24</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:45:12</sys_updated_on>
         <value>#******* Format to access Input Parameters *******&#13;
 # To use variable, prefix with '$'. eg. $message&#13;
 # Read more https://docs.servicenow.com/?context=CSHelp:IntegrationHub-PowerShell-Step&#13;
@@ -220,7 +220,7 @@
 # $cred       Credential Object. Credential resolved via connection alias or credential alias. This can be used in conjunction with any cmd-let which support credential parameter eg. New-PSSession -credential $cred&#13;
 # $log_info   mid property "mid.property.powershell.log_info" set on instance to enable debugging. So it's a flag available to act on and add any verbose logging if they want to in their script&#13;
 &#13;
-invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
+invoke-command -ComputerName $hostConn -Credential($cred) -ScriptBlock {Stop-Process -Id $procID}</value>
         <variable display_value="">c54323fa3721030003a08fb77e41f16e</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=a88d6ae1db341490b8ae8d7e13961963"/>
@@ -302,11 +302,11 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 18:25:40</sys_created_on>
         <sys_id>788d6ae1db341490b8ae8d7e13961998</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 18:28:24</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:45:12</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
-        <value>{"procID":"{{action.procid}}"}</value>
+        <value>{"procID":"{{action.procid}}","hostConn":"{{action.host}}"}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script_type</field>
@@ -903,14 +903,14 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 18:25:41</sys_created_on>
         <sys_id>018d6ae1db341490b8ae8d7e139619b5</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 18:28:31</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:45:19</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -986,14 +986,14 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 18:25:41</sys_created_on>
         <sys_id>0d8d6ae1db341490b8ae8d7e139619bb</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 18:28:31</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:45:19</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1069,14 +1069,14 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 18:25:41</sys_created_on>
         <sys_id>0d8d6ae1db341490b8ae8d7e139619c1</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 18:28:31</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:45:19</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1189,14 +1189,14 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 18:25:39</sys_created_on>
         <sys_id>a88d6ae1db341490b8ae8d7e13961963</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 18:28:24</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:45:12</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a88d6ae1db341490b8ae8d7e13961963"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1291,9 +1291,9 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 18:25:40</sys_created_on>
         <sys_id>f48d6ae1db341490b8ae8d7e1396199a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 18:28:24</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:45:12</sys_updated_on>
         <value>#******* Format to access Input Parameters *******&#13;
 # To use variable, prefix with '$'. eg. $message&#13;
 # Read more https://docs.servicenow.com/?context=CSHelp:IntegrationHub-PowerShell-Step&#13;
@@ -1303,7 +1303,7 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
 # $cred       Credential Object. Credential resolved via connection alias or credential alias. This can be used in conjunction with any cmd-let which support credential parameter eg. New-PSSession -credential $cred&#13;
 # $log_info   mid property "mid.property.powershell.log_info" set on instance to enable debugging. So it's a flag available to act on and add any verbose logging if they want to in their script&#13;
 &#13;
-invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
+invoke-command -ComputerName $hostConn -Credential($cred) -ScriptBlock {Stop-Process -Id $procID}</value>
         <variable display_value="">c54323fa3721030003a08fb77e41f16e</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=a88d6ae1db341490b8ae8d7e13961963"/>
@@ -1385,11 +1385,11 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 18:25:40</sys_created_on>
         <sys_id>788d6ae1db341490b8ae8d7e13961998</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 18:28:24</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:45:12</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
-        <value>{"procID":"{{action.procid}}"}</value>
+        <value>{"procID":"{{action.procid}}","hostConn":"{{action.host}}"}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script_type</field>
@@ -1902,13 +1902,13 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Stop Process">508d6ae1db341490b8ae8d7e13961930</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"f03eee25db341490b8ae8d7e139619cb","name":"plan"}}</plan>
-        <snapshot>8f2e6e25db341490b8ae8d7e1396195a</snapshot>
+        <snapshot>3321672adb389890b8ae8d7e1396190d</snapshot>
         <sys_class_name>sys_hub_action_plan</sys_class_name>
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 18:28:40</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>f03eee25db341490b8ae8d7e139619cb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1916,7 +1916,7 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 18:28:40</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:45:30</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2022,14 +2022,14 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 18:28:35</sys_created_on>
         <sys_id>2b2e6e25db341490b8ae8d7e139619f2</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 18:28:36</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:45:24</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2b2e6e25db341490b8ae8d7e139619f2"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2096,9 +2096,9 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 18:28:36</sys_created_on>
         <sys_id>af2eae25db341490b8ae8d7e1396190e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 18:28:36</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:45:24</sys_updated_on>
         <value>#******* Format to access Input Parameters *******&#13;
 # To use variable, prefix with '$'. eg. $message&#13;
 # Read more https://docs.servicenow.com/?context=CSHelp:IntegrationHub-PowerShell-Step&#13;
@@ -2108,7 +2108,7 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
 # $cred       Credential Object. Credential resolved via connection alias or credential alias. This can be used in conjunction with any cmd-let which support credential parameter eg. New-PSSession -credential $cred&#13;
 # $log_info   mid property "mid.property.powershell.log_info" set on instance to enable debugging. So it's a flag available to act on and add any verbose logging if they want to in their script&#13;
 &#13;
-invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
+invoke-command -ComputerName $hostConn -Credential($cred) -ScriptBlock {Stop-Process -Id $procID}</value>
         <variable display_value="">c54323fa3721030003a08fb77e41f16e</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2218,11 +2218,11 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 18:28:36</sys_created_on>
         <sys_id>272eae25db341490b8ae8d7e1396190d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 18:28:36</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:45:24</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
-        <value>{"procID":"{{action.procid}}"}</value>
+        <value>{"procID":"{{action.procid}}","hostConn":"{{action.host}}"}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script_type</field>
@@ -2819,14 +2819,14 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 18:28:36</sys_created_on>
         <sys_id>f72eae25db341490b8ae8d7e13961928</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 18:28:37</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:45:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2902,14 +2902,14 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 18:28:36</sys_created_on>
         <sys_id>ff2eae25db341490b8ae8d7e1396192e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 18:28:37</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:45:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2985,14 +2985,14 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 18:28:36</sys_created_on>
         <sys_id>ff2eae25db341490b8ae8d7e13961934</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 18:28:37</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:45:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3105,14 +3105,14 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 18:28:35</sys_created_on>
         <sys_id>2b2e6e25db341490b8ae8d7e139619f2</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Windows Admin Spoke">863e7b70db381090b8ae8d7e1396191a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 18:28:36</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:45:24</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2b2e6e25db341490b8ae8d7e139619f2"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3179,9 +3179,9 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 18:28:36</sys_created_on>
         <sys_id>af2eae25db341490b8ae8d7e1396190e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 18:28:36</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:45:24</sys_updated_on>
         <value>#******* Format to access Input Parameters *******&#13;
 # To use variable, prefix with '$'. eg. $message&#13;
 # Read more https://docs.servicenow.com/?context=CSHelp:IntegrationHub-PowerShell-Step&#13;
@@ -3191,7 +3191,7 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
 # $cred       Credential Object. Credential resolved via connection alias or credential alias. This can be used in conjunction with any cmd-let which support credential parameter eg. New-PSSession -credential $cred&#13;
 # $log_info   mid property "mid.property.powershell.log_info" set on instance to enable debugging. So it's a flag available to act on and add any verbose logging if they want to in their script&#13;
 &#13;
-invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
+invoke-command -ComputerName $hostConn -Credential($cred) -ScriptBlock {Stop-Process -Id $procID}</value>
         <variable display_value="">c54323fa3721030003a08fb77e41f16e</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3301,11 +3301,11 @@ invoke-command -ScriptBlock {Stop-Process -Id $procID}</value>
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2020-05-15 18:28:36</sys_created_on>
         <sys_id>272eae25db341490b8ae8d7e1396190d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2020-05-15 18:28:36</sys_updated_on>
+        <sys_updated_on>2020-05-19 00:45:24</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_486f577a3721030003a08fb77e41f1d6</table>
-        <value>{"procID":"{{action.procid}}"}</value>
+        <value>{"procID":"{{action.procid}}","hostConn":"{{action.host}}"}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script_type</field>
